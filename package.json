@@ -1,0 +1,39 @@
+{
+  "name": "load-stripe",
+  "description": "Load the promisified stripe api in the browser.",
+  "version": "1.0.0",
+  "author": "Dylan Piercey <pierceydylan@gmail.com>",
+  "browser": {
+    "agentkeepalive": "./noop"
+  },
+  "bugs": "https://github.com/DylanPiercey/load-stripe/issues",
+  "dependencies": {
+    "simple-load-script": "^1.0.0",
+    "stripe-as-promised": "^2.0.0"
+  },
+  "devDependencies": {
+    "snazzy": "^4.0.0",
+    "standard": "^7.0.0"
+  },
+  "fetchor": "Dylan Piercey <pierceydylan@gmail.com>",
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/DylanPiercey/load-stripe",
+  "keywords": [
+    "async",
+    "loader",
+    "promise",
+    "stripe",
+    "stripe-as-promised"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DylanPiercey/load-stripe"
+  },
+  "scripts": {
+    "test": "standard --verbose | snazzy"
+  }
+}
