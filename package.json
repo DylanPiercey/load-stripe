@@ -1,7 +1,7 @@
 {
   "name": "load-stripe",
   "description": "Load the promisified stripe api in the browser.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Dylan Piercey <pierceydylan@gmail.com>",
   "browser": {
     "agentkeepalive": "./noop"

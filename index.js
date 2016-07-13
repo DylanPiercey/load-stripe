@@ -9,10 +9,9 @@ module.exports = loadStripe.default = loadStripe
 
 function loadStripe (key) {
   _stripe = _stripe || load(loadStripe.version).then(function () {
-    if (global.Stripe) {
-      var stripe = promisify(global.Stripe, Promise)
-      stripe.setPublishableKey(key)
-    }
+    if (!global.Stripe) throw new Error('Could not load Stripe.js')
+    var stripe = promisify(global.Stripe, Promise)
+    stripe.setPublishableKey(key)
     return stripe
   })
 
