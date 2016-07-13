@@ -12,7 +12,6 @@ function loadStripe (key) {
     if (global.Stripe) {
       var stripe = promisify(global.Stripe, Promise)
       stripe.setPublishableKey(key)
-      delete global.Stripe
     }
     return stripe
   })
