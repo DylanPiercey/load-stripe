@@ -10,9 +10,9 @@ module.exports = loadStripe.default = loadStripe
 function loadStripe (key) {
   _stripe = _stripe || load(loadStripe.version).then(function () {
     if (global.Stripe) {
-      delete global.Stripe
       var stripe = promisify(global.Stripe, Promise)
       stripe.setPublishableKey(key)
+      delete global.Stripe
     }
     return stripe
   })
